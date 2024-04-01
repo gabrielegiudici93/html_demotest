@@ -1,4 +1,4 @@
-# Academic Project Page Template
+# Academic Project Page Template 2024
 This is an academic paper project page template.
 
 
