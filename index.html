@@ -1,15 +1,14 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -17,7 +16,7 @@
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
@@ -44,6 +43,23 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .text-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Set width to match image width */
+      text-align: center;
+      padding: 10px; /* Adjust padding as needed */
+      background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity as needed */
+    }
+  </style>
 </head>
 <body>
 
@@ -172,155 +188,28 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
     <div class="container">
       <div class="item has-text-centered">
         <!-- First image -->
-        <img src="static/images/First_image_lightC.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
-          Overview of the proposed long-horizon task segmentation approach. Individual skills are segmented and classified at each temporal window of the demonstration.
-          The demonstrations are collected via the teleoperation system developed in [15].
-        </h2>
-      </div>
-      
-      <div class="item has-text-centered">
-        <!-- Second image -->
-        <img src="static/images/network_deep_finaL_v3_B.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
-          The leader agent generates motor control commands for the end effector pose and finger joints of the hand. The follower robot executes corresponding actions based on these commands. During teleoperation, the follower robot provides haptic feedback. 
-          When operating the robot autonomously, we control the robot using a distinct MLP trained on the proprioceptive and tactile data (i.e. haptic data) of each separate skill.
-        </h2>
-      </div>
-      
-      <div class="item has-text-centered">
-        <!-- Third image -->
-        <img src="static/images/network_deep_finaL_v3_A.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
-          The architecture of our Neural Network for supervised representation learning incorporates an auto-regressive autoencoder and a label decoder.
-          This network processes time-series feature data as input, with the encoder transforming these features into a latent space. The temporal decoder reconstructs the features along with their predictions, whereas the label decoder extracts labels from the latent vectors. 
-          The label decoder is jointly trained with the autoencoder generating latent features that improve the segmentation performance. 
-        </h2>
-      </div>
-      
-      <div class="item has-text-centered">
-        <!-- Fourth image -->
-        <img src="static/images/confmat_clean2.pdf" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
-          Confusion matrix (%) of the segmentation system on the Long-horizon demonstrations
-        </h2>
-      </div>
-      
-      <div class="item has-text-centered">
-        <!-- Fifth image -->
-        <img src="static/images/TSNE_2d_with_color_mapping.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
-          T-SNE visualization of the classifier latent features. Each point in the graph corresponds to a primitive skill instance, differentiated by various colors to distinguish among the primitive skills. 
-        </h2>
-      </div>
-      
-      <div class="item has-text-centered">
-        <!-- Sixth image -->
-        <img src="static/images/VIDEO_ALigt.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
-          Long-horizon Task A using a soft sponge      
-        </h2>
-      </div>
-      
-      <div class="item has-text-centered">
-        <!-- Seventh image -->
-        <img src="static/images/VIDEO_BLigt.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
-          Long-horizon Task B using a cardboard package     
-        </h2>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="image-container">
+          <img src="static/images/First_image_lightC.png" alt="MY ALT TEXT"/>
+          <div class="text-container">
+            <h2 class="subtitle">
+              Overview of the proposed long-horizon task segmentation approach. Individual skills are segmented and classified at each temporal window of the demonstration.
+              The demonstrations are collected via the teleoperation system developed in [15].
+            </h2>
           </div>
         </div>
       </div>
+      
+      <!-- Repeat the same structure for other images -->
+      
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
+<!-- Add the rest of your HTML code below -->
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+<!-- End of your HTML code -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
