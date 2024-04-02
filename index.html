@@ -94,7 +94,7 @@
         <source src="static/videos/IROS_V3.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-justified">
 Effective execution of long-horizon tasks with dexterous robotic hands remains a significant challenge in real-world problems. In this work we proposed DexSkills, a novel supervised learning framework that addresses long-horizon dexterous manipulation tasks using primitive skills. DexSkills is trained using haptic data recorded from human demonstrations to recognize and replicate a select set of skills, which can then segment a demonstrated long-horizon dexterous manipulation task into a sequence of primitive skills to achieve one-shot execution by the robot directly. We developed a novel supervised representation learning framework that jointly train an auto-regressive autoencoder and a label decoder for segmenting unseen long-horizon tasks into skill sequences Our real-world robotic experiments show that DexSkills can enable robot autonomously to achieve long-horizon dexterous tasks effectively and successfully; The analysis results show that our framework can clearly distinguish most of primitive skill.      </h2>
     </div>
   </div>
@@ -125,7 +125,7 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
       <div class="item has-text-centered">
         <!-- First image -->
         <img src="static/images/First_image_lightC.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
+        <h2 class="subtitle has-text-justified">
           Overview of the proposed long-horizon task segmentation approach. Individual skills are segmented and classified at each temporal window of the demonstration.
           The demonstrations are collected via the teleoperation system developed in [15].
         </h2>
@@ -134,7 +134,7 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
       <div class="item has-text-centered">
         <!-- Second image -->
         <img src="static/images/network_deep_finaL_v3_B.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
+        <h2 class="subtitle has-text-justified">
           The leader agent generates motor control commands for the end effector pose and finger joints of the hand. The follower robot executes corresponding actions based on these commands. During teleoperation, the follower robot provides haptic feedback. 
           When operating the robot autonomously, we control the robot using a distinct MLP trained on the proprioceptive and tactile data (i.e. haptic data) of each separate skill.
         </h2>
@@ -143,7 +143,7 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
       <div class="item has-text-centered">
         <!-- Third image -->
         <img src="static/images/network_deep_finaL_v3_A.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
+        <h2 class="subtitle has-text-justified">
           The architecture of our Neural Network for supervised representation learning incorporates an auto-regressive autoencoder and a label decoder.
           This network processes time-series feature data as input, with the encoder transforming these features into a latent space. The temporal decoder reconstructs the features along with their predictions, whereas the label decoder extracts labels from the latent vectors. 
           The label decoder is jointly trained with the autoencoder generating latent features that improve the segmentation performance. 
@@ -153,7 +153,7 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
       <div class="item has-text-centered">
         <!-- Fourth image -->
         <img src="static/images/confmat_clean2.pdf" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
+        <h2 class="subtitle has-text-justified">
           Confusion matrix (%) of the segmentation system on the Long-horizon demonstrations
         </h2>
       </div>
@@ -161,7 +161,7 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
       <div class="item has-text-centered">
         <!-- Fifth image -->
         <img src="static/images/TSNE_2d_with_color_mapping.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
+        <h2 class="subtitle has-text-justified">
           T-SNE visualization of the classifier latent features. Each point in the graph corresponds to a primitive skill instance, differentiated by various colors to distinguish among the primitive skills. 
         </h2>
       </div>
@@ -169,7 +169,7 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
       <div class="item has-text-centered">
         <!-- Sixth image -->
         <img src="static/images/VIDEO_ALigt.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
+        <h2 class="subtitle has-text-justified">
           Long-horizon Task A using a soft sponge      
         </h2>
       </div>
@@ -177,7 +177,7 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
       <div class="item has-text-centered">
         <!-- Seventh image -->
         <img src="static/images/VIDEO_BLigt.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle">
+        <h2 class="subtitle has-text-justified">
           Long-horizon Task B using a cardboard package     
         </h2>
       </div>
