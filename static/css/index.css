@@ -1,7 +1,23 @@
+/* Set the width of text elements to match the width of images */
+.publication-body img {
+  width: 100%;
+}
+
+/* Format image descriptions */
+.publication-body figcaption {
+  width: 100%;
+  text-align: center;
+}
+
+/* Additional styling for image descriptions if needed */
+.publication-body figcaption {
+  font-style: italic;
+}
+
+/* Your existing CSS code continues below */
 body {
   font-family: 'Noto Sans', sans-serif;
 }
-
 
 .footer .icon-link {
     font-size: 25px;
@@ -17,7 +33,6 @@ body {
   font-variant: small-caps;
 }
 
-
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
@@ -27,13 +42,11 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
-
 .publication-title {
 }
 
 .publication-banner {
   max-height: parent;
-
 }
 
 .publication-banner video {
@@ -65,9 +78,6 @@ body {
     color: #ff3860;
     width: fit-content;
     font-weight: bolder;
-}
-
-.publication-authors {
 }
 
 .publication-authors a {
@@ -107,9 +117,6 @@ body {
     height: 100%;
 }
 
-.publication-body img {
-}
-
 .results-carousel {
   overflow: hidden;
 }
@@ -132,5 +139,3 @@ body {
 .eql-cntrb { 
   font-size: smaller;
 }
-
-
