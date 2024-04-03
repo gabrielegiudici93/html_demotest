@@ -244,24 +244,26 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
       <h2 class="title is-4 has-text-centered">Demonstration and Autonomous Control Architecture</h2>
 
       <!-- Text for the second group -->
-      <div class="columns is-vcentered">
-        <div class="column">
-          <h2 class="subtitle has-text-justified">
-            The leader agent generates motor control commands for the end effector pose and finger joints of the hand. The follower robot executes corresponding actions based on these commands. During teleoperation, the follower robot provides haptic feedback. 
-            When operating the robot autonomously, we control the robot using a distinct MLP trained on the proprioceptive and tactile data (i.e. haptic data) of each separate skill.
-          </h2>
-        </div>
-      </div>
-
-      <!-- Images and captions -->
       <div class="columns" style="margin-top: 20px;">
+        <!-- Description and first image -->
         <div class="column is-half">
-          <figure class="image is-centered">
-            <img src="static/images/FIG2_800.png" alt="MY ALT TEXT"/>
-            <figcaption class="subtitle has-text-centered">Caption for the first image</figcaption>
-          </figure>
+          <div class="columns is-vcentered">
+            <div class="column">
+              <h2 class="subtitle has-text-justified">
+                The leader agent generates motor control commands for the end effector pose and finger joints of the hand. The follower robot executes corresponding actions based on these commands. During teleoperation, the follower robot provides haptic feedback. 
+                When operating the robot autonomously, we control the robot using a distinct MLP trained on the proprioceptive and tactile data (i.e. haptic data) of each separate skill.
+              </h2>
+            </div>
+            <div class="column">
+              <figure class="image is-centered">
+                <img src="static/images/FIG2_800.png" alt="MY ALT TEXT"/>
+                <figcaption class="subtitle has-text-centered">Caption for the first image</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
-        <div class="column is-half">
+        <!-- Two images with captions -->
+        <div class="column">
           <figure class="image is-centered">
             <img src="static/images/table_LH_800.png" alt="MY ALT TEXT"/>
             <figcaption class="subtitle has-text-centered">Caption for the second image</figcaption>
@@ -275,6 +277,7 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
     </div>
   </div>
 </section>
+
 
 
 
