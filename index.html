@@ -236,24 +236,45 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
 
   
 
-      <!-- Second group of figures -->
-      <div class="item has-text-centered" style="margin-top: 20px;">
-        <!-- Demonstration and Autonomous Control Architecture -->
-        <h2 class="title is-4">Demonstration and Autonomous Control Architecture</h2>
-        <div class="columns is-vcentered">
-          <!-- Text for the second image -->
-          <div class="column is-half">
-            <h2 class="subtitle has-text-justified">
-              The leader agent generates motor control commands for the end effector pose and finger joints of the hand. The follower robot executes corresponding actions based on these commands. During teleoperation, the follower robot provides haptic feedback. 
-              When operating the robot autonomously, we control the robot using a distinct MLP trained on the proprioceptive and tactile data (i.e. haptic data) of each separate skill.
-            </h2>
-          </div>
-          <!-- Second image -->
-          <div class="column is-half">
-            <img src="static/images/FIG2_800.png" alt="MY ALT TEXT"/>
-          </div>
+<!-- Second group of figures -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Title for the section -->
+      <h2 class="title is-4 has-text-centered">Demonstration and Autonomous Control Architecture</h2>
+
+      <!-- Text for the second group -->
+      <div class="columns is-vcentered">
+        <div class="column">
+          <h2 class="subtitle has-text-justified">
+            The leader agent generates motor control commands for the end effector pose and finger joints of the hand. The follower robot executes corresponding actions based on these commands. During teleoperation, the follower robot provides haptic feedback. 
+            When operating the robot autonomously, we control the robot using a distinct MLP trained on the proprioceptive and tactile data (i.e. haptic data) of each separate skill.
+          </h2>
         </div>
       </div>
+
+      <!-- Images and captions -->
+      <div class="columns" style="margin-top: 20px;">
+        <div class="column is-half">
+          <figure class="image is-centered">
+            <img src="static/images/tab_skills_800.png" alt="MY ALT TEXT"/>
+            <figcaption class="subtitle has-text-centered">Caption for the first image</figcaption>
+          </figure>
+        </div>
+        <div class="column is-half">
+          <figure class="image is-centered">
+            <img src="static/images/tab_LH_800.png" alt="MY ALT TEXT"/>
+            <figcaption class="subtitle has-text-centered">Caption for the second image</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
       
       <!-- Third group of figures -->
       <div class="item has-text-centered" style="margin-top: 20px;">
