@@ -231,8 +231,6 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
 
 
 
-
-
 <!-- Second group of figures -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -241,26 +239,21 @@ Effective execution of long-horizon tasks with dexterous robotic hands remains a
       <div class="item has-text-centered" style="margin-top: 20px;">
         <h2 class="title is-4">Demonstration and Autonomous Control Architecture</h2>
         <div class="columns is-vcentered">
-          <!-- Text for the second image -->
-          <div class="column is-half">
-            <h2 class="subtitle has-text-justified">
-              The leader agent generates motor control commands for the end effector pose and finger joints of the hand. The follower robot executes corresponding actions based on these commands. During teleoperation, the follower robot provides haptic feedback. 
-              When operating the robot autonomously, we control the robot using a distinct MLP trained on the proprioceptive and tactile data (i.e. haptic data) of each separate skill.
-            </h2>
-          </div>
           <!-- Second image -->
           <div class="column is-half">
             <img src="static/images/FIG2_800.png" alt="MY ALT TEXT"/>
           </div>
+          <!-- Text for the second image -->
+          <div class="column is-half has-text-justified">
+            <h2 class="subtitle">
+              The leader agent generates motor control commands for the end effector pose and finger joints of the hand. The follower robot executes corresponding actions based on these commands. During teleoperation, the follower robot provides haptic feedback. 
+              When operating the robot autonomously, we control the robot using a distinct MLP trained on the proprioceptive and tactile data (i.e. haptic data) of each separate skill.
+            </h2>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
+      <!-- New images -->
       <div class="columns is-centered" style="margin-top: 20px;">
         <!-- First new image -->
         <div class="column is-half has-text-centered" style="height: 500px;">
@@ -278,20 +271,12 @@ Tasks are denoted by alphabetical letters ranging from A to T. Objects utilized 
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-      
-      <!-- Third group of figures -->
+<!-- Third group of figures -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- DexSkills: Learning Framework -->
       <div class="item has-text-centered" style="margin-top: 20px;">
-        <!-- DexSkills: Learning Framework -->
         <h2 class="title is-4">DexSkills: Learning Framework</h2>
         <div class="columns is-vcentered">
           <!-- Third image -->
@@ -299,8 +284,8 @@ Tasks are denoted by alphabetical letters ranging from A to T. Objects utilized 
             <img src="static/images/FIG3_800.png" alt="MY ALT TEXT"/>
           </div>
           <!-- Text for the third image -->
-          <div class="column is-half">
-            <h2 class="subtitle has-text-justified">
+          <div class="column is-half has-text-justified">
+            <h2 class="subtitle">
               The architecture of our Neural Network for supervised representation learning incorporates an auto-regressive autoencoder and a label decoder.
               This network processes time-series feature data as input, with the encoder transforming these features into a latent space. The temporal decoder reconstructs the features along with their predictions, whereas the label decoder extracts labels from the latent vectors. 
               The label decoder is jointly trained with the autoencoder generating latent features that improve the segmentation performance. 
@@ -308,6 +293,10 @@ Tasks are denoted by alphabetical letters ranging from A to T. Objects utilized 
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
       
       <!-- Fourth and Fifth group of figures -->
       <div class="item has-text-centered" style="margin-top: 20px;">
